@@ -54,6 +54,6 @@ Gestiona las pruebas de campo, cuando el formato sea previamente diligenciado no
 - Mateo Prieto
 - Jhonatan Torres 
 - Tatiana Marin 
-- Santiago Velazco
+- Santiago Velasco
 
 
