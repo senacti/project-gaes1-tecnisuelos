@@ -1,5 +1,5 @@
 # Repositorio proyecto TECNISUELOS
-<p align="center"><img width="800" src="1 Trimestre/Diseño sin título (2).png"></p>
+<p align="center"><img width="800" src="1 Trimestre/Diseño sin título (3).png"></p>
 
 ## Objetivo general 🎯
 Dar solución al problema que presenta actualmente la empresa TecniSuelos, pavimentos y concretos desarrollando un software a la medida el cual incluya los módulos inventarios, cartera, informes de laboratorio, pruebas en campo y así dar gestión oportuna a sus requerimientos mejorando drásticamente su tiempo de respuesta.
