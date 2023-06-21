@@ -4,7 +4,8 @@ use App\Http\Controllers\Auth\ClienteController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginRegisterController;
-
+use App\Http\Controllers\Auth\PruebaCampoController;
+use App\Http\Controllers\Auth\NuevoInformeController;
 
 
 /*
@@ -56,7 +57,7 @@ Route::get('/Administrador', function () {
 
 Route::get('/laboratorista', function () {
     return view('laboratorista');
-});
+})->name('laboratorista');
 
 Route::get('/cronograma', function () {
     return view('cronograma');
@@ -88,6 +89,14 @@ Route::get('/register', function () {
     return view('register');
 });
 
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/administrador', function () {
+        return view('administrador');
+    })->name('administrador');
+});
+
+
 
 Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/register', 'register')->name('register');
@@ -113,3 +122,8 @@ Route::controller(ClienteController::class)->group(function() {
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::post('/register', [RegisterController::class, 'index'])->name('register');
+Route::post('/nuevoInforme', [PruebaCampoController::class, 'index'])->name('crear_prueba_campo');
+Route::post('/crearInforme', [NuevoInformeController::class, 'index'])->name('nuevo_informe');

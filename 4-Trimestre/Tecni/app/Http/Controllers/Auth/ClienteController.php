@@ -10,15 +10,6 @@ class ClienteController extends Controller
 {
     public function storeCliente(Request $request)
     {
-        $request->validate([
-            'nombre' => 'required|string|max:250',
-            'email' => 'required|email|max:250|unique:users',
-            'direccion' => 'required|string|max:40',
-            'fecha' => 'required|date',
-            'apellido' => 'required|string',
-            'numero' => 'required|int',
-            
-        ]);
 
         cliente::create([
             'name' => $request->nombre,

@@ -45,19 +45,20 @@
       <div class="img"></div>
 
 
-      <form action="laboratorista">
+      <form  method="POST" action="{{route ('crear_prueba_campo')}}">
+      @csrf
         <div class="container">
 
           <div class="row">
 
             <div class="col">
-              <input type="text" class="form-control" placeholder="Nombre Empleado" required>
+              <input type="text" class="form-control" placeholder="Nombre Empleado" required name="nombre_empleado">
             </div>
             <div class="col">
-              <input type="date" class="form-control" placeholder="Fecha" required>
+              <input type="date" class="form-control" placeholder="Fecha" required name="fecha">
             </div>
             <div class="col">
-              <input type="number" class="form-control" placeholder="Numero de Cilindro" required>
+              <input type="number" class="form-control" placeholder="Numero de Cilindro" required name="numero_cilindro">
             </div>
 
           </div>
@@ -66,13 +67,13 @@
           <div class="row">
 
             <div class="col">
-              <input type="number" class="form-control" placeholder="Numero de Prueba " required>
+              <input type="number" class="form-control" placeholder="Numero de Prueba " required name="numero_prueba">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Cliente" required>
+              <input type="text" class="form-control" placeholder="Cliente" required name="cliente">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Ubicación" required>
+              <input type="text" class="form-control" placeholder="Ubicación" required name="ubicacion">
             </div>
 
           </div>
@@ -80,10 +81,10 @@
 
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Sondeos" required>
+              <input type="text" class="form-control" placeholder="Sondeos" required name="sondeos">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Revenimiento" required>
+              <input type="text" class="form-control" placeholder="Revenimiento" required name="revenimiento">
             </div>
 
           </div>
@@ -91,28 +92,20 @@
 
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Ultrasónico" required>
+              <input type="text" class="form-control" placeholder="Ultrasónico" required name="ultrasonico">
             </div>
             <div class="col">
-              <input type="number" class="form-control" placeholder="Esclerometría" required>
+              <input type="number" class="form-control" placeholder="Esclerometría" required name="esclerometria">
             </div>
 
           </div>
 
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Análisis petrográficos en agregados" required>
+              <input type="text" class="form-control" placeholder="Análisis petrográficos en agregados" required name="analisis_petrograficos">
             </div>
             <div class="col">
-              <input type="number" class="form-control" placeholder="Elaboración de cilindros" required>
-            </div>
-
-          </div>
-
-
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Reactividad potencial (Método químico)" required>
+              <input type="number" class="form-control" placeholder="Elaboración de cilindros" required name="elaboracion">
             </div>
 
           </div>
@@ -120,17 +113,15 @@
 
           <div class="row">
             <div class="col">
-              <input type="number" class="form-control" placeholder="Elaboración de cilindros" required>
+              <input type="text" class="form-control" placeholder="Reactividad potencial (Método químico)" required name="reactividad">
             </div>
 
-
           </div>
-
 
           <div class="row">
             <div class="col">
               <input type="text" class="form-control"
-                placeholder="Compresión de cilindros de Tiempos de fraguado inicial y final" required>
+                placeholder="Compresión de cilindros de Tiempos de fraguado inicial y final" required  name="compresion">
             </div>
 
           </div>

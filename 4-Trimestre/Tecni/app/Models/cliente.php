@@ -13,6 +13,8 @@ class cliente extends Model
      *
      * @var array<int, string>
      */
+    protected $table = 'clientes'; 
+
     protected $fillable = [
         'direccion',
         'date',

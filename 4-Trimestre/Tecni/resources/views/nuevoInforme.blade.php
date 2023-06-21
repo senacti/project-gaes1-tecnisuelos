@@ -46,19 +46,21 @@
 
         <section class="container-login">
             <div class="img"></div>
-            <form action="laboratorista">
+            <form method="POST" action="{{route ('nuevo_informe')}}">>
+            @csrf
+
             <div class="container">
   
               <div class="row">
         
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Nombre Empleado" required>
+                  <input type="text" class="form-control" placeholder="Nombre Empleado" required name="nombre_empleado">
                 </div>
                 <div class="col">
-                    <input type="date" class="form-control" placeholder="Fecha" required>
+                    <input type="date" class="form-control" placeholder="Fecha" required name="fecha">
                   </div>
                  <div class="col">
-                    <input type="number" class="form-control" placeholder="Numero de Cilindro" required>
+                    <input type="number" class="form-control" placeholder="Numero de Cilindro" required name="numero_cilindro">
                   </div>
                 
               </div>
@@ -67,10 +69,10 @@
               <div class="row">
                 
                 <div class="col">
-                  <input type="number" class="form-control" placeholder="Numero de Prueba " required>
+                  <input type="number" class="form-control" placeholder="Numero de Prueba " required name="numero_prueba">
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Cliente" required>
+                    <input type="text" class="form-control" placeholder="Cliente" required name="cliente">
                   </div>
                 
               </div>
@@ -78,10 +80,10 @@
         
               <div class="row">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Granulometria" required>
+                  <input type="text" class="form-control" placeholder="Granulometria" required name="granulometria">
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Contenido de aire" required>
+                    <input type="text" class="form-control" placeholder="Contenido de aire" required name="aire">
                   </div>
         
                 </div>
@@ -89,10 +91,10 @@
 
                 <div class="row">
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="Flexión del concreto" required>
+                      <input type="text" class="form-control" placeholder="Flexión del concreto" required name="flexion">
                     </div>
                     <div class="col">
-                        <input type="number" class="form-control" placeholder="Compresión" required>
+                        <input type="number" class="form-control" placeholder="Compresión" required name="compresion">
                       </div>
             
                     </div>
@@ -100,7 +102,7 @@
 
                     <div class="row">
                         <div class="col">
-                          <input type="text" class="form-control" placeholder="Estudio petrográfico" required>
+                          <input type="text" class="form-control" placeholder="Estudio petrográfico" required name="estudio">
                         </div>
                     
                         </div>
@@ -108,7 +110,7 @@
 
                         <div class="row">
                             <div class="col">
-                              <input type="number" class="form-control" placeholder="Elasticidad con extensómetro" required>
+                              <input type="number" class="form-control" placeholder="Elasticidad con extensómetro" required name="elasticidad">
                             </div>
                          
                     
@@ -117,7 +119,7 @@
 
                             <div class="row">
                                 <div class="col">
-                                  <input type="text" class="form-control" placeholder="Contracción por secado" required>
+                                  <input type="text" class="form-control" placeholder="Contracción por secado" required name="contraccion">
                                 </div>
                                 
                         
@@ -126,7 +128,7 @@
 
                                 <div class="row">
                                     <div class="col">
-                                      <input type="text" class="form-control" placeholder="Pruebas de permeabilidad al agua" required>
+                                      <input type="text" class="form-control" placeholder="Pruebas de permeabilidad al agua" required name="pruebas_permeabilidad">
                                     </div>
                         
                             
