@@ -82,7 +82,7 @@ class LoginRegisterController extends Controller
     {
         if(Auth::check())
         {
-            return view('administrador');
+            return view('contador');
         }
 
         return redirect()->route('login')

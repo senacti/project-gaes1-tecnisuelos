@@ -15,25 +15,34 @@
 </head>
 
 <body>
-  <header class="hv-background">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container container-fluid">
-        <a class="navbar-brand" href="{{ url('/') }}"><img id="logoTec" src="{{ asset('Imagenes/20230309_161828.png') }}" alt="Logo" width="200"
-            height="60" class=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav  g-col-6">
-            <li class="nav-item">
-              <a class="nav-link btn btn-secondary" aria-current="page" href="{{ url('/') }}">Inicio</a>
-            </li>
-          </ul>
+  <header class="hv-background background wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container container-fluid">
+
+            <a class="navbar-brand" href="{{ url('/index') }}"><img id="logoTec" src="{{ asset('/Imagenes/20230309_161828.png') }}" alt="Logo" width="200" height="60" class=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav  g-col-6">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn btn-secondary" href="{{ url('/#') }}" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Contador
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="{{ url('/contador') }}">Atras</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
+</header>
   <form action="index">
     <section class="container-login">
       <div class="img"></div>
@@ -110,6 +119,7 @@
       </div>
     </section>
   </form>
+  
 </body>
 <footer class="footer footer-login">
   <div class="justify-content-center">

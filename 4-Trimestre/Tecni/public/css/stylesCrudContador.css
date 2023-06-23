@@ -104,7 +104,7 @@ input.form-control{
     position:absolute;
     top:0;
     left:0;
-    z-index:1;
+  
 }
 .container-login  h1 {
    text-align: center;
@@ -241,9 +241,6 @@ input.form-control{
     border-bottom-right-radius: 20px ;
   }
 
-
-
-
   .colum-info-2 .id-2{
     height: 100%;
     width: 5%;
@@ -329,6 +326,11 @@ input.form-control{
     border-top-right-radius: 20px ;
     border-bottom-right-radius: 20px ;
   }
+  
+  
+
+  
+  
   
 @media screen and (max-width: 768px) {
   .container-login  {

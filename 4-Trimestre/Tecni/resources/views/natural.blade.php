@@ -63,7 +63,7 @@
       <div class="row">
         
         <div class="col">
-          <input type="tel" class="form-control" placeholder="Numero de Contacto" required name="numero">
+          <input type="tel" class="form-control" placeholder="Numero de Contacto" required pattern="{1,11}" name="numero">
         </div>
         <div class="col">
             <input type="text" class="form-control" placeholder="Dirección" required name="direccion">

@@ -73,8 +73,9 @@ Route::get('/HistoInformes', function () {
 Route::get('/PruebasdeCampo', function () {
     return view('pruebasdeCampo');
 });
-
-
+Route::get('/contador', function () {
+    return view('contador');
+});
 Route::get('/404act', function () {
     return view('404act');
 });
@@ -91,9 +92,9 @@ Route::get('/register', function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
-    Route::get('/administrador', function () {
-        return view('administrador');
-    })->name('administrador');
+    Route::get('/contador', function () {
+        return view('contador');
+    })->name('contador');
 });
 
 
@@ -122,8 +123,6 @@ Route::controller(ClienteController::class)->group(function() {
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
 Route::post('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/nuevoInforme', [PruebaCampoController::class, 'index'])->name('crear_prueba_campo');
 Route::post('/crearInforme', [NuevoInformeController::class, 'index'])->name('nuevo_informe');

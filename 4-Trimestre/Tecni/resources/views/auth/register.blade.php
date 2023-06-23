@@ -48,7 +48,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <input type="number" class="form-control" placeholder="Numero"  required  name="number">
+          <input type="number" class="form-control" placeholder="Numero"  required pattern="{1,11}" name="number">
         </div>
         <div class="col">
             <input type="text" class="form-control" placeholder="Direccion" required name="direccion">
