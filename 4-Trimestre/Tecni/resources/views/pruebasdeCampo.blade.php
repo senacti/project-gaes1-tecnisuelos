@@ -53,11 +53,14 @@
 
             <div class="col">
               <input type="text" class="form-control" placeholder="Nombre Empleado" required name="nombre_empleado">
+              <input type="text" class="form-control" placeholder="Nombre Empleado" required name="nombre_empleado">
             </div>
             <div class="col">
               <input type="date" class="form-control" placeholder="Fecha" required name="fecha">
+              <input type="date" class="form-control" placeholder="Fecha" required name="fecha">
             </div>
             <div class="col">
+              <input type="number" class="form-control" placeholder="Numero de Cilindro" required name="numero_cilindro">
               <input type="number" class="form-control" placeholder="Numero de Cilindro" required name="numero_cilindro">
             </div>
 
@@ -68,11 +71,14 @@
 
             <div class="col">
               <input type="number" class="form-control" placeholder="Numero de Prueba " required name="numero_prueba">
+              <input type="number" class="form-control" placeholder="Numero de Prueba " required name="numero_prueba">
             </div>
             <div class="col">
               <input type="text" class="form-control" placeholder="Cliente" required name="cliente">
+              <input type="text" class="form-control" placeholder="Cliente" required name="cliente">
             </div>
             <div class="col">
+              <input type="text" class="form-control" placeholder="Ubicación" required name="ubicacion">
               <input type="text" class="form-control" placeholder="Ubicación" required name="ubicacion">
             </div>
 
@@ -82,8 +88,10 @@
           <div class="row">
             <div class="col">
               <input type="text" class="form-control" placeholder="Sondeos" required name="sondeos">
+              <input type="text" class="form-control" placeholder="Sondeos" required name="sondeos">
             </div>
             <div class="col">
+              <input type="text" class="form-control" placeholder="Revenimiento" required name="revenimiento">
               <input type="text" class="form-control" placeholder="Revenimiento" required name="revenimiento">
             </div>
 
@@ -93,8 +101,10 @@
           <div class="row">
             <div class="col">
               <input type="text" class="form-control" placeholder="Ultrasónico" required name="ultrasonico">
+              <input type="text" class="form-control" placeholder="Ultrasónico" required name="ultrasonico">
             </div>
             <div class="col">
+              <input type="number" class="form-control" placeholder="Esclerometría" required name="esclerometria">
               <input type="number" class="form-control" placeholder="Esclerometría" required name="esclerometria">
             </div>
 
@@ -103,8 +113,10 @@
           <div class="row">
             <div class="col">
               <input type="text" class="form-control" placeholder="Análisis petrográficos en agregados" required name="analisis_petrograficos">
+              <input type="text" class="form-control" placeholder="Análisis petrográficos en agregados" required name="analisis_petrograficos">
             </div>
             <div class="col">
+              <input type="number" class="form-control" placeholder="Elaboración de cilindros" required name="elaboracion">
               <input type="number" class="form-control" placeholder="Elaboración de cilindros" required name="elaboracion">
             </div>
 
@@ -114,6 +126,7 @@
           <div class="row">
             <div class="col">
               <input type="text" class="form-control" placeholder="Reactividad potencial (Método químico)" required name="reactividad">
+              <input type="text" class="form-control" placeholder="Reactividad potencial (Método químico)" required name="reactividad">
             </div>
 
           </div>
@@ -121,6 +134,7 @@
           <div class="row">
             <div class="col">
               <input type="text" class="form-control"
+                placeholder="Compresión de cilindros de Tiempos de fraguado inicial y final" required  name="compresion">
                 placeholder="Compresión de cilindros de Tiempos de fraguado inicial y final" required  name="compresion">
             </div>
 

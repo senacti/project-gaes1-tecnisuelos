@@ -32,7 +32,7 @@
       </div>
     </nav>
   </header>
-<form method="POST" action="{{route ('store')}}">
+<form method="POST" action="{{route ('register')}}">
     @csrf
     <section class="container-login">
         <div class="img"></div>

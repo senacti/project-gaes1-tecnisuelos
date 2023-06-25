@@ -50,6 +50,10 @@ Route::get('/agendar', function () {
     return view('agendar');
 });
 
+Route::get('/servicios', function () {
+    return view('servicios');
+});
+
 Route::get('/Pjuridica', function () {
     return view('juridica');
 });
