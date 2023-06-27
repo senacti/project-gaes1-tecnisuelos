@@ -19,7 +19,7 @@ class InventarioController extends Controller
             'imagen'=>$request->imagen,
             'cantidad'=>$request->cantidad,
         ]);
-        return redirect()->route('index');
+        return redirect()->route('crudInventario');
     }
 
     public function formInventario(){

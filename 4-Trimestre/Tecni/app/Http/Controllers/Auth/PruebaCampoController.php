@@ -42,7 +42,7 @@ class PruebaCampoController extends Controller
             'reactividad' =>$request->reactividad,
             'compresion' =>$request->compresion,
         ]);
-        return redirect()->route('index');
+        return redirect()->route('crudIngeniero');
     }
 
     public function index(){

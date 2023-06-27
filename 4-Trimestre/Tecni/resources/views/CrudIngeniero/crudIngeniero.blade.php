@@ -68,10 +68,10 @@
             <h6>Sondeo</h6>
           </div>
           <div class="eliminar">
-            <h6><i class="fa-regular fa-trash-can"></i></h6>
+            <h6>Editar</h6>
           </div>
           <div class="visualizar">
-            <h6><i class="fa-regular fa-eye"></i></h6>
+            <h6>Eliminar</h6>
           </div>
         </div>
 

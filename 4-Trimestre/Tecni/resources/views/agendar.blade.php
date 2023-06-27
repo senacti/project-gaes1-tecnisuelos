@@ -26,7 +26,7 @@
                 <a class="nav-link btn btn-secondary" aria-current="page" href="{{ url('/') }}">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link btn btn-secondary" href="{{ url('/') }}">Servicios</a>
+                <a class="nav-link btn btn-secondary" href="{{ url('/servicios') }}">Servicios</a>
               </li>
               
               <li class="nav-item">

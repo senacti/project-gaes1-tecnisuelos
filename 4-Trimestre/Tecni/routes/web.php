@@ -80,7 +80,7 @@ Route::get('/HistoInformes', function () {
 });
 
 Route::get('/PruebasdeCampo', function () {
-    return view('pruebasdeCampo');
+    return view('CrudIngeniero.pruebasdeCampo');
 });
 
 
